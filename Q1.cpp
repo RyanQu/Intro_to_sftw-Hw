@@ -1,5 +1,6 @@
 #include "iostream"
-Void main(){
+using namespace std;
+int main(){
     int n = 4, k = 2;
     cout << ++n << endl;
     cout << n << endl;

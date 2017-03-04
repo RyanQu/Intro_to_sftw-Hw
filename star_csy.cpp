@@ -1,4 +1,6 @@
-include "std_lib_facilities.h"
+//#include "std_lib_facilities.h"
+#include "iostream"
+using namespace std;
 
 void starLeftTriangle(int n);
 void starRightTriangle(int m);
@@ -35,8 +37,9 @@ int main()
 }
 
 void starLeftTriangle(int n){
-    int i = 1, j = 1;
+    int i = 1;
     while (i <= n){
+        int j = 1;
         while (j <= i){
             cout << "*";
             ++j;
@@ -47,8 +50,9 @@ void starLeftTriangle(int n){
 }
 
 void starRightTriangle(int m){
-    int i = m, j = 1, k = m;
+    int i = m, k = m;
     while (i >= 1){
+        int j = 1;
         while (j < i){
             cout << " ";
             j++;

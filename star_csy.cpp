@@ -12,22 +12,19 @@ int main()
     cout << "Choose to print from (L)left or (R)right side or (Q)quit:";
 
     while (cin >> unit) {
-        if (unit == 'L' || 'l') {
-            cout << "Input the number of stars you want to draw:";
+        if (unit == 'L' || unit == 'l') {
+            cout << "Left-Input the number of stars you want to draw:";
             cin >> star;
             starLeftTriangle(star);
             cout << "Choose to print from (L)left or (R)right side or (Q)quit:";
-        }
-        else if (unit == 'R' || 'r') {
-            cout << "Input the number of stars you want to draw:";
+        }else if (unit == 'R' || unit == 'r') {
+            cout << "Right-Input the number of stars you want to draw:";
             cin >> star;
             starRightTriangle(star);
             cout << "Choose to print from (L)left or (R)right side or (Q)quit:";
-        }
-        else if (unit == 'Q' || 'q') {
+        }else if (unit == 'Q' || unit == 'q') {
             break;
-        }
-        else {
+        }else {
             cout << "You input wrong choice" << "\n";
             cout << "Choose to print from (L)left or (R)right side or (Q)quit:";
         }

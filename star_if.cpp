@@ -4,8 +4,9 @@
 */
 
 //#include "std_lib_facilities.h" 
-#include "iostream"
-using namespace std;  
+#include <iostream>
+#include <string> 
+using namespace std;
 
 void starLeft(){
     cout << "Input the number of stars you want to draw:"; 
@@ -56,12 +57,14 @@ void starRight(){
     cout << "Choose to print from (L)left or (R)right side or (Q)quit:";
 }
 
-int main()
-{
+int main(){
     int star;
     char unit;
+    int num;
     cout << "Choose to print from (L)left or (R)right side or (Q)quit:";
-    cin >> unit;
+    
+    cin >> unit;           
+    
     while (1) {
         if (unit == 'L' || unit == 'l') { 
             starLeft();
@@ -76,7 +79,7 @@ int main()
         cin.ignore();
         cin >> unit;
     }
-
+    
     return 0;
 }
 

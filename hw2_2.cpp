@@ -9,14 +9,16 @@ void test(const char *test="\n", const int n=1){
 }
 
 int main(){
-    //char *x = new char[16];
-    char *x;
+    // New a char object assigned to x
+    char *x = new char[16]; 
     int n;
     cout<<"Please input the content:";
     cin>>x;
     cout<<"Please input the number:";
     cin>>n;
     test(x,n);
+    cout<<"\nBasic case: "<<endl;
+    test();
     return 0;
 }
 

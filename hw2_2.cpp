@@ -2,13 +2,14 @@
 #include "iostream"
 using namespace std;
 
-void test(char *test="\n", int n=1){
+void test(const char *test="\n", const int n=1){
     for (int i=0;i<n;++i){
         cout << test;
     }
 }
 
 int main(){
+    //char *x = new char[16];
     char *x;
     int n;
     cout<<"Please input the content:";

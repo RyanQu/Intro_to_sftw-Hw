@@ -3,6 +3,14 @@
 #include <vector>
 using namespace std;
 
+void print_vector(vector<int> &x){
+    cout<<"The vecotr is: { ";
+    for(int i=0;i<x.size()-1;i++) {
+        cout << x[i] <<", ";
+    }
+    cout<<x[x.size()-1]<<" }"<<endl;
+}
+
 void reverse_vector(vector<int> &x){
     cout<<"Reverse the vecotr."<<endl;
     for(int i=0;i<x.size()/2;i++) {
@@ -10,6 +18,7 @@ void reverse_vector(vector<int> &x){
         x[i]=x[x.size()-1-i];
         x[x.size()-1-i]=temp;
     }
+	print_vector(x);
 }
 
 void swap_vector(vector<int> &x){
@@ -17,14 +26,7 @@ void swap_vector(vector<int> &x){
     for(int i=0;i<x.size()/2;i++) {
         swap(x[i],x[x.size()-1-i]);
     }
-}
-
-void print_vector(vector<int> &x){
-    cout<<"The vecotr is: { ";
-    for(int i=0;i<x.size()-1;i++) {
-        cout << x[i] <<", ";
-    }
-    cout<<x[x.size()-1]<<" }"<<endl;
+	print_vector(x);
 }
 
 int main(){
@@ -39,9 +41,7 @@ int main(){
     cout<<"\n";
     print_vector(nums);
     reverse_vector(nums);
-    print_vector(nums);
     swap_vector(nums);
-    print_vector(nums);
     return 0;
 }
 

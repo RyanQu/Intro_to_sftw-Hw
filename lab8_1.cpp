@@ -14,16 +14,28 @@ using namespace std;
 
 int main(){
     string str, temp;
+
     cout<<"Input a string: ";
     cin>>str;
     temp=str;
     int n=str.length();
-    cout<< "The last five chars is: "<<str.substr(n-5)<<endl;
+    if(n>5){
+        cout<< "The last five chars is: "<<str.substr(n-5)<<endl;
+    }else{
+        cout<< "Less than five chars. "<<endl;
+        cout<< "The last "<<n<<" chars is: "<<str<<endl;
+    }
 
     cout<<"Input a string: ";
     cin>>str;
     n=str.length();
-    cout<< "RBS appear in: "<<str.find("RBS")<<endl;
+    for(int i=0;i<n-2;i++){
+        if((str[i]=='R')&&(str[i+1]=='B')&&(str[i+2]=='S')){
+            cout<< "RBS appear in: "<<i<<endl;
+            i+=3;
+        }
+    }
+    // cout<< "RBS appear in: "<<str.find("RBS")<<endl;
 
     cout<<"Input a string: ";
     cin>>str;

@@ -28,7 +28,7 @@ void find_RBS(){
     for(int i=0;i<n-2;i++){
         if((str[i]=='R')&&(str[i+1]=='B')&&(str[i+2]=='S')){
             cout<< "RBS appear in: "<<i<<endl;
-            i+=3;
+            i+=2;
         }
     }
     // cout<< "RBS appear in: "<<str.find("RBS")<<endl;

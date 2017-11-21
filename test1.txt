@@ -1,0 +1,4 @@
+1001	Yuan Qu
+Start balance: 100
+0.3 of withdraw amout is: 30
+Current balance: 70

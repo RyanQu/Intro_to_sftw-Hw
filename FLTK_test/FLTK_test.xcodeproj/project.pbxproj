@@ -14,6 +14,7 @@
 		BD9E21491FBDE66300D231DC /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD9E21431FBDE66200D231DC /* Window.cpp */; };
 		BD9E214B1FBDEAA400D231DC /* chapter.12.7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD9E214A1FBDEAA400D231DC /* chapter.12.7.cpp */; };
 		BD9E21501FBDEC2E00D231DC /* chapter.12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD9E214F1FBDEC2E00D231DC /* chapter.12.cpp */; };
+		BDE289951FCE06E800A7241B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDE289941FCE06E800A7241B /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		BD9E214C1FBDEB2100D231DC /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		BD9E214D1FBDEB2100D231DC /* snow_cpp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = snow_cpp.gif; sourceTree = "<group>"; };
 		BD9E214F1FBDEC2E00D231DC /* chapter.12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chapter.12.cpp; sourceTree = "<group>"; };
+		BDE289941FCE06E800A7241B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				BD9E21421FBDE66200D231DC /* Window.h */,
 				BD9E214A1FBDEAA400D231DC /* chapter.12.7.cpp */,
 				BD9E214F1FBDEC2E00D231DC /* chapter.12.cpp */,
+				BDE289941FCE06E800A7241B /* main.cpp */,
 			);
 			path = FLTK_test;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				BD9E21501FBDEC2E00D231DC /* chapter.12.cpp in Sources */,
 				BD9E21481FBDE66300D231DC /* GUI.cpp in Sources */,
 				BD9E21361FBDE1DD00D231DC /* helloworld.cpp in Sources */,
+				BDE289951FCE06E800A7241B /* main.cpp in Sources */,
 				BD9E21471FBDE66300D231DC /* Simple_window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

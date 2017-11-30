@@ -11,6 +11,7 @@ public:
     void setX(const int newx);
     void setY(const int newy);
     void printPoint() const;
+    ~Point(){}
 };
 
 int Point::getX() const{
